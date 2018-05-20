@@ -22,6 +22,10 @@
 		9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */; };
 		9C8B0AF920ADB74D0063B5C9 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */; };
 		9C8B0AFB20ADB94D0063B5C9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */; };
+		9C8C879F20B12BF100AD8982 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879B20B12BF100AD8982 /* LRUCache.swift */; };
+		9C8C87A020B12BF100AD8982 /* FIFOCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879C20B12BF100AD8982 /* FIFOCache.swift */; };
+		9C8C87A120B12BF100AD8982 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879D20B12BF100AD8982 /* LinkedList.swift */; };
+		9C8C87A220B12BF100AD8982 /* RFMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879E20B12BF100AD8982 /* RFMemoryCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MambaManager.swift; sourceTree = "<group>"; };
 		9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		9C8C879B20B12BF100AD8982 /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		9C8C879C20B12BF100AD8982 /* FIFOCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIFOCache.swift; sourceTree = "<group>"; };
+		9C8C879D20B12BF100AD8982 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		9C8C879E20B12BF100AD8982 /* RFMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFMemoryCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		9C8B0AB720AD75310063B5C9 /* RFMamba */ = {
 			isa = PBXGroup;
 			children = (
+				9C8C879A20B12BBD00AD8982 /* RFMemoryCache */,
 				9C8B0AE820AD754E0063B5C9 /* Helpers */,
 				9C8B0AE720AD753D0063B5C9 /* Extensions */,
 				9C8B0AE620AD75380063B5C9 /* Core */,
@@ -171,6 +180,17 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C8C879A20B12BBD00AD8982 /* RFMemoryCache */ = {
+			isa = PBXGroup;
+			children = (
+				9C8C879C20B12BF100AD8982 /* FIFOCache.swift */,
+				9C8C879D20B12BF100AD8982 /* LinkedList.swift */,
+				9C8C879B20B12BF100AD8982 /* LRUCache.swift */,
+				9C8C879E20B12BF100AD8982 /* RFMemoryCache.swift */,
+			);
+			path = RFMemoryCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,12 +327,16 @@
 				9C8B0AFB20ADB94D0063B5C9 /* ImageCache.swift in Sources */,
 				9C8B0ABB20AD75310063B5C9 /* ViewController.swift in Sources */,
 				9C8B0AEB20AD75630063B5C9 /* Mamba.swift in Sources */,
+				9C8C87A220B12BF100AD8982 /* RFMemoryCache.swift in Sources */,
 				9C8B0AED20AD75B90063B5C9 /* Image+Mamba.swift in Sources */,
 				9C8B0AF120AD9B5E0063B5C9 /* Resource.swift in Sources */,
 				9C8B0AB920AD75310063B5C9 /* AppDelegate.swift in Sources */,
+				9C8C87A020B12BF100AD8982 /* FIFOCache.swift in Sources */,
 				9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */,
 				9C8B0AF320ADA42A0063B5C9 /* Placeholder.swift in Sources */,
+				9C8C879F20B12BF100AD8982 /* LRUCache.swift in Sources */,
 				9C8B0AF920ADB74D0063B5C9 /* ImageDownloader.swift in Sources */,
+				9C8C87A120B12BF100AD8982 /* LinkedList.swift in Sources */,
 				9C8B0AF520ADABF80063B5C9 /* MambaOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
