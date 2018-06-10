@@ -31,3 +31,4 @@ public extension MambaCompatible {
 extension UIImage: MambaCompatible { }
 extension UIImageView: MambaCompatible { }
 extension UIButton: MambaCompatible { }
+extension String: MambaCompatible { }

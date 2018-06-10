@@ -11,14 +11,14 @@ import Foundation
 public class RFMemoryCache<Key: Hashable> {
     
     
-    private let FIFOQueue : FIFOCache<Key>
-    private let LRUQueue : LRUCache<Key>
+    private let fifoQueue : FIFOQueue<Key>
+    private let lruQueue : LRUQueue<Key>
     private let semaphore = DispatchSemaphore(value: 1)
     
     public init(_ fC: Int = 400, lC: Int = 400) {
         
-        FIFOQueue = FIFOCache<Key>(fC)
-        LRUQueue = LRUCache<Key>(lC)
+        fifoQueue = FIFOQueue<Key>(fC)
+        lruQueue = LRUQueue<Key>(lC)
         NotificationCenter.default.addObserver(
             self, selector: #selector(clearMemoryCache), name: .UIApplicationDidReceiveMemoryWarning, object: nil)
     }
@@ -30,23 +30,23 @@ public class RFMemoryCache<Key: Hashable> {
     public func get(_ key: Key) -> Any? {
         
         semaphore.wait()
-        let FIFOResult = FIFOQueue.get(key)
-        let LRUResult = LRUQueue.get(key)
+        let fifoResult = fifoQueue.get(key)
+        let lruResult = lruQueue.get(key)
         
-        if FIFOResult.1 == true {
-            LRUQueue.set(key, val: FIFOResult.0 as Any)
+        if fifoResult.1 == true {
+            lruQueue.set(key, val: fifoResult.0 as Any)
         }
         semaphore.signal()
-        return LRUResult == nil ? FIFOResult.0 : LRUResult
+        return lruResult == nil ? fifoResult.0 : lruResult
         
     }
     
     public func set(_ key: Key, val: Any) {
         
         semaphore.wait()
-        let result = FIFOQueue.set(key, val: val)
+        let result = fifoQueue.set(key, val: val)
         if result == true {
-            LRUQueue.set(key, val: val)
+            lruQueue.set(key, val: val)
         }
         semaphore.signal()
     }
@@ -54,16 +54,16 @@ public class RFMemoryCache<Key: Hashable> {
     func remove(_ key: Key) {
         
         semaphore.wait()
-        FIFOQueue.remove(key)
-        LRUQueue.remove(key)
+        fifoQueue.remove(key)
+        lruQueue.remove(key)
         semaphore.signal()
     }
     
     @objc func clearMemoryCache() {
         
         semaphore.wait()
-        FIFOQueue.clear()
-        LRUQueue.clear()
+        fifoQueue.clear()
+        lruQueue.clear()
         semaphore.signal()
     }
 }

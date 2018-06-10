@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class LRUCache<Key: Hashable> {
+public class LRUQueue<Key: Hashable> {
     
     typealias Node = LinkedList<Key>.LinkedNode<Key>
     

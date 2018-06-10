@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FIFOCache<Key: Hashable> {
+public class FIFOQueue<Key: Hashable> {
     
     typealias Node = LinkedList<Key>.LinkedNode<Key>
     
