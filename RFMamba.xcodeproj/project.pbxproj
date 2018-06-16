@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01462A9720D5383C0038306C /* Button+Mamba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01462A9620D5383C0038306C /* Button+Mamba.swift */; };
 		9C8B0AB920AD75310063B5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AB820AD75310063B5C9 /* AppDelegate.swift */; };
 		9C8B0ABB20AD75310063B5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0ABA20AD75310063B5C9 /* ViewController.swift */; };
 		9C8B0ABE20AD75310063B5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8B0ABC20AD75310063B5C9 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01462A9620D5383C0038306C /* Button+Mamba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Mamba.swift"; sourceTree = "<group>"; };
 		9C8B0AB520AD75310063B5C9 /* RFMamba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFMamba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8B0AB820AD75310063B5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8B0ABA20AD75310063B5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				9C8B0AEC20AD75B90063B5C9 /* ImageView+Mamba.swift */,
+				01462A9620D5383C0038306C /* Button+Mamba.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				9C8B0AED20AD75B90063B5C9 /* ImageView+Mamba.swift in Sources */,
 				9C8B0AF120AD9B5E0063B5C9 /* Resource.swift in Sources */,
 				9C8B0AB920AD75310063B5C9 /* AppDelegate.swift in Sources */,
+				01462A9720D5383C0038306C /* Button+Mamba.swift in Sources */,
 				9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */,
 				9CD1310E20D51B6F00C21005 /* RFMemoryCache.mm in Sources */,
 				9C8B0AF320ADA42A0063B5C9 /* Placeholder.swift in Sources */,
