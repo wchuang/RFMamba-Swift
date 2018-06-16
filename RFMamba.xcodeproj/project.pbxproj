@@ -22,11 +22,8 @@
 		9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */; };
 		9C8B0AF920ADB74D0063B5C9 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */; };
 		9C8B0AFB20ADB94D0063B5C9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */; };
-		9C8C879F20B12BF100AD8982 /* LRUQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879B20B12BF100AD8982 /* LRUQueue.swift */; };
-		9C8C87A020B12BF100AD8982 /* FIFOQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879C20B12BF100AD8982 /* FIFOQueue.swift */; };
-		9C8C87A120B12BF100AD8982 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879D20B12BF100AD8982 /* LinkedList.swift */; };
-		9C8C87A220B12BF100AD8982 /* RFMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C879E20B12BF100AD8982 /* RFMemoryCache.swift */; };
 		9C8C87A420B12E0300AD8982 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C87A320B12E0300AD8982 /* String+MD5.swift */; };
+		9CD1310E20D51B6F00C21005 /* RFMemoryCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CD1310D20D51B6F00C21005 /* RFMemoryCache.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +65,10 @@
 		9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MambaManager.swift; sourceTree = "<group>"; };
 		9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		9C8C879B20B12BF100AD8982 /* LRUQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUQueue.swift; sourceTree = "<group>"; };
-		9C8C879C20B12BF100AD8982 /* FIFOQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIFOQueue.swift; sourceTree = "<group>"; };
-		9C8C879D20B12BF100AD8982 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
-		9C8C879E20B12BF100AD8982 /* RFMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFMemoryCache.swift; sourceTree = "<group>"; };
 		9C8C87A320B12E0300AD8982 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		9CD1310720D51AE700C21005 /* RFMamba-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFMamba-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CD1310C20D51B6F00C21005 /* RFMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFMemoryCache.h; sourceTree = "<group>"; };
+		9CD1310D20D51B6F00C21005 /* RFMemoryCache.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RFMemoryCache.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +129,7 @@
 				9C8B0ABF20AD75320063B5C9 /* Assets.xcassets */,
 				9C8B0AC120AD75320063B5C9 /* LaunchScreen.storyboard */,
 				9C8B0AC420AD75320063B5C9 /* Info.plist */,
+				9CD1310720D51AE700C21005 /* RFMamba-Bridging-Header.h */,
 			);
 			path = RFMamba;
 			sourceTree = "<group>";
@@ -188,10 +185,8 @@
 		9C8C879A20B12BBD00AD8982 /* RFMemoryCache */ = {
 			isa = PBXGroup;
 			children = (
-				9C8C879C20B12BF100AD8982 /* FIFOQueue.swift */,
-				9C8C879D20B12BF100AD8982 /* LinkedList.swift */,
-				9C8C879B20B12BF100AD8982 /* LRUQueue.swift */,
-				9C8C879E20B12BF100AD8982 /* RFMemoryCache.swift */,
+				9CD1310C20D51B6F00C21005 /* RFMemoryCache.h */,
+				9CD1310D20D51B6F00C21005 /* RFMemoryCache.mm */,
 			);
 			path = RFMemoryCache;
 			sourceTree = "<group>";
@@ -264,6 +259,7 @@
 				TargetAttributes = {
 					9C8B0AB420AD75310063B5C9 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					9C8B0AC820AD75320063B5C9 = {
@@ -333,17 +329,14 @@
 				9C8B0AFB20ADB94D0063B5C9 /* ImageCache.swift in Sources */,
 				9C8B0ABB20AD75310063B5C9 /* ViewController.swift in Sources */,
 				9C8B0AEB20AD75630063B5C9 /* Mamba.swift in Sources */,
-				9C8C87A220B12BF100AD8982 /* RFMemoryCache.swift in Sources */,
 				9C8B0AED20AD75B90063B5C9 /* ImageView+Mamba.swift in Sources */,
 				9C8B0AF120AD9B5E0063B5C9 /* Resource.swift in Sources */,
 				9C8B0AB920AD75310063B5C9 /* AppDelegate.swift in Sources */,
-				9C8C87A020B12BF100AD8982 /* FIFOQueue.swift in Sources */,
 				9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */,
+				9CD1310E20D51B6F00C21005 /* RFMemoryCache.mm in Sources */,
 				9C8B0AF320ADA42A0063B5C9 /* Placeholder.swift in Sources */,
-				9C8C879F20B12BF100AD8982 /* LRUQueue.swift in Sources */,
 				9C8B0AF920ADB74D0063B5C9 /* ImageDownloader.swift in Sources */,
 				9C8C87A420B12E0300AD8982 /* String+MD5.swift in Sources */,
-				9C8C87A120B12BF100AD8982 /* LinkedList.swift in Sources */,
 				9C8B0AF520ADABF80063B5C9 /* MambaOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,11 +509,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RFMamba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = roy.cao.RFMamba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RFMamba/RFMamba-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -530,11 +526,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RFMamba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = roy.cao.RFMamba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RFMamba/RFMamba-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
