@@ -9,22 +9,13 @@
 import Foundation
 import UIKit
 
-
 extension Mamba where Base: UIImageView {
     
-    
-    
-    @discardableResult
-    public func setImage(with resource: Resource, placeholder: Placeholder? = nil) {
+    public func setImage(with resource: Resource,
+                         placeholder: Placeholder? = nil) {
 
     
     }
-    
-    
-    
-    
-    
-    
     
     
     

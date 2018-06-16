@@ -8,21 +8,6 @@
 
 import Foundation
 
-
-//public struct StringProxy {
-//    fileprivate let base: String
-//    init(proxy: String) {
-//        base = proxy
-//    }
-//}
-//
-//extension String: MambaCompatible {
-//    public typealias CompatibleType = StringProxy
-//    public var rf: CompatibleType {
-//        return StringProxy(proxy: self)
-//    }
-//}
-
 extension Mamba where Base ==  String  {
     var md5: String {
         if let data = base.data(using: .utf8, allowLossyConversion: true) {

@@ -8,10 +8,8 @@
 
 import UIKit
 
-
 public typealias MambaOptions = [MambaOption]
 let MambaEmptyOptions = [MambaOption]()
-
 
 public enum MambaOption{
     

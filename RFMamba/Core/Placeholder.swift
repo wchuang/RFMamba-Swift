@@ -15,7 +15,6 @@ public protocol Placeholder {
     func remove(from imageView: UIImageView)
 }
 
-
 extension Placeholder where Self: UIImage {
     
     public func add(to imageView: UIImageView) { imageView.image = self }

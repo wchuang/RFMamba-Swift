@@ -8,13 +8,14 @@
 
 import UIKit
 
-
 public class MambaManager {
 
     public static let shared = MambaManager()
     
+    // Cache used by this manager
     public var cache: ImageCache
     
+    // Downloader used by this manager
     public var downloader: ImageDownloader
 
 

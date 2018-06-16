@@ -18,7 +18,6 @@ public protocol URLConvertible {
     func asURL() throws -> URL
 }
 
-
 extension String: URLConvertible {
     /// Returns a URL if `self` represents a valid URL string that conforms to RFC 2396 or throws an `AFError`.
     ///
