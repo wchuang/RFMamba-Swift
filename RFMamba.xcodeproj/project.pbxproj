@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01462A9720D5383C0038306C /* Button+Mamba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01462A9620D5383C0038306C /* Button+Mamba.swift */; };
+		01462A9E20D680270038306C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01462A9D20D680270038306C /* ImageDownloader.swift */; };
 		9C8B0AB920AD75310063B5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AB820AD75310063B5C9 /* AppDelegate.swift */; };
 		9C8B0ABB20AD75310063B5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0ABA20AD75310063B5C9 /* ViewController.swift */; };
 		9C8B0ABE20AD75310063B5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8B0ABC20AD75310063B5C9 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		01462A9620D5383C0038306C /* Button+Mamba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Mamba.swift"; sourceTree = "<group>"; };
+		01462A9D20D680270038306C /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9C8B0AB520AD75310063B5C9 /* RFMamba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFMamba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8B0AB820AD75310063B5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8B0ABA20AD75310063B5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				9C8B0AF420ADABF80063B5C9 /* MambaOptions.swift */,
 				9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */,
 				9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */,
+				01462A9D20D680270038306C /* ImageDownloader.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			files = (
 				9C8B0AFB20ADB94D0063B5C9 /* ImageCache.swift in Sources */,
 				9C8B0ABB20AD75310063B5C9 /* ViewController.swift in Sources */,
+				01462A9E20D680270038306C /* ImageDownloader.swift in Sources */,
 				9C8B0AEB20AD75630063B5C9 /* Mamba.swift in Sources */,
 				9C8B0AED20AD75B90063B5C9 /* ImageView+Mamba.swift in Sources */,
 				9C8B0AF120AD9B5E0063B5C9 /* Resource.swift in Sources */,
