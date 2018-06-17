@@ -47,17 +47,17 @@
 /* Begin PBXFileReference section */
 		01462A9620D5383C0038306C /* Button+Mamba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Mamba.swift"; sourceTree = "<group>"; };
 		01462A9D20D680270038306C /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		9C8B0AB520AD75310063B5C9 /* RFMamba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFMamba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8B0AB520AD75310063B5C9 /* RFMambaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFMambaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8B0AB820AD75310063B5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8B0ABA20AD75310063B5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C8B0ABD20AD75310063B5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C8B0ABF20AD75320063B5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C8B0AC220AD75320063B5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C8B0AC420AD75320063B5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C8B0AC920AD75320063B5C9 /* RFMambaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFMambaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8B0AC920AD75320063B5C9 /* RFMambaSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFMambaSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8B0ACD20AD75320063B5C9 /* RFMambaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFMambaTests.swift; sourceTree = "<group>"; };
 		9C8B0ACF20AD75320063B5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C8B0AD420AD75320063B5C9 /* RFMambaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFMambaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8B0AD420AD75320063B5C9 /* RFMambaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFMambaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8B0AD820AD75320063B5C9 /* RFMambaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFMambaUITests.swift; sourceTree = "<group>"; };
 		9C8B0ADA20AD75320063B5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C8B0AEA20AD75630063B5C9 /* Mamba.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mamba.swift; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		9C8B0AB620AD75310063B5C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C8B0AB520AD75310063B5C9 /* RFMamba.app */,
-				9C8B0AC920AD75320063B5C9 /* RFMambaTests.xctest */,
-				9C8B0AD420AD75320063B5C9 /* RFMambaUITests.xctest */,
+				9C8B0AB520AD75310063B5C9 /* RFMambaSwift.app */,
+				9C8B0AC920AD75320063B5C9 /* RFMambaSwiftTests.xctest */,
+				9C8B0AD420AD75320063B5C9 /* RFMambaSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C8B0AB420AD75310063B5C9 /* RFMamba */ = {
+		9C8B0AB420AD75310063B5C9 /* RFMambaSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C8B0ADD20AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMamba" */;
+			buildConfigurationList = 9C8B0ADD20AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaSwift" */;
 			buildPhases = (
 				9C8B0AB120AD75310063B5C9 /* Sources */,
 				9C8B0AB220AD75310063B5C9 /* Frameworks */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = RFMamba;
+			name = RFMambaSwift;
 			productName = RFMamba;
-			productReference = 9C8B0AB520AD75310063B5C9 /* RFMamba.app */;
+			productReference = 9C8B0AB520AD75310063B5C9 /* RFMambaSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C8B0AC820AD75320063B5C9 /* RFMambaTests */ = {
+		9C8B0AC820AD75320063B5C9 /* RFMambaSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C8B0AE020AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaTests" */;
+			buildConfigurationList = 9C8B0AE020AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaSwiftTests" */;
 			buildPhases = (
 				9C8B0AC520AD75320063B5C9 /* Sources */,
 				9C8B0AC620AD75320063B5C9 /* Frameworks */,
@@ -227,14 +227,14 @@
 			dependencies = (
 				9C8B0ACB20AD75320063B5C9 /* PBXTargetDependency */,
 			);
-			name = RFMambaTests;
+			name = RFMambaSwiftTests;
 			productName = RFMambaTests;
-			productReference = 9C8B0AC920AD75320063B5C9 /* RFMambaTests.xctest */;
+			productReference = 9C8B0AC920AD75320063B5C9 /* RFMambaSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9C8B0AD320AD75320063B5C9 /* RFMambaUITests */ = {
+		9C8B0AD320AD75320063B5C9 /* RFMambaSwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C8B0AE320AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaUITests" */;
+			buildConfigurationList = 9C8B0AE320AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaSwiftUITests" */;
 			buildPhases = (
 				9C8B0AD020AD75320063B5C9 /* Sources */,
 				9C8B0AD120AD75320063B5C9 /* Frameworks */,
@@ -245,9 +245,9 @@
 			dependencies = (
 				9C8B0AD620AD75320063B5C9 /* PBXTargetDependency */,
 			);
-			name = RFMambaUITests;
+			name = RFMambaSwiftUITests;
 			productName = RFMambaUITests;
-			productReference = 9C8B0AD420AD75320063B5C9 /* RFMambaUITests.xctest */;
+			productReference = 9C8B0AD420AD75320063B5C9 /* RFMambaSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -277,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C8B0AB020AD75310063B5C9 /* Build configuration list for PBXProject "RFMamba" */;
+			buildConfigurationList = 9C8B0AB020AD75310063B5C9 /* Build configuration list for PBXProject "RFMambaSwift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -290,9 +290,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C8B0AB420AD75310063B5C9 /* RFMamba */,
-				9C8B0AC820AD75320063B5C9 /* RFMambaTests */,
-				9C8B0AD320AD75320063B5C9 /* RFMambaUITests */,
+				9C8B0AB420AD75310063B5C9 /* RFMambaSwift */,
+				9C8B0AC820AD75320063B5C9 /* RFMambaSwiftTests */,
+				9C8B0AD320AD75320063B5C9 /* RFMambaSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,12 +366,12 @@
 /* Begin PBXTargetDependency section */
 		9C8B0ACB20AD75320063B5C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C8B0AB420AD75310063B5C9 /* RFMamba */;
+			target = 9C8B0AB420AD75310063B5C9 /* RFMambaSwift */;
 			targetProxy = 9C8B0ACA20AD75320063B5C9 /* PBXContainerItemProxy */;
 		};
 		9C8B0AD620AD75320063B5C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C8B0AB420AD75310063B5C9 /* RFMamba */;
+			target = 9C8B0AB420AD75310063B5C9 /* RFMambaSwift */;
 			targetProxy = 9C8B0AD520AD75320063B5C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -560,7 +560,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFMamba.app/RFMamba";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFMambaSwift.app/RFMambaSwift";
 			};
 			name = Debug;
 		};
@@ -576,7 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFMamba.app/RFMamba";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFMambaSwift.app/RFMambaSwift";
 			};
 			name = Release;
 		};
@@ -613,7 +613,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C8B0AB020AD75310063B5C9 /* Build configuration list for PBXProject "RFMamba" */ = {
+		9C8B0AB020AD75310063B5C9 /* Build configuration list for PBXProject "RFMambaSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C8B0ADB20AD75320063B5C9 /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C8B0ADD20AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMamba" */ = {
+		9C8B0ADD20AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C8B0ADE20AD75320063B5C9 /* Debug */,
@@ -631,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C8B0AE020AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaTests" */ = {
+		9C8B0AE020AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C8B0AE120AD75320063B5C9 /* Debug */,
@@ -640,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C8B0AE320AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaUITests" */ = {
+		9C8B0AE320AD75320063B5C9 /* Build configuration list for PBXNativeTarget "RFMambaSwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C8B0AE420AD75320063B5C9 /* Debug */,
