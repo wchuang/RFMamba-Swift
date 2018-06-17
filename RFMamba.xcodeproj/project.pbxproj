@@ -21,7 +21,6 @@
 		9C8B0AF320ADA42A0063B5C9 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF220ADA42A0063B5C9 /* Placeholder.swift */; };
 		9C8B0AF520ADABF80063B5C9 /* MambaOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF420ADABF80063B5C9 /* MambaOptions.swift */; };
 		9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */; };
-		9C8B0AF920ADB74D0063B5C9 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */; };
 		9C8B0AFB20ADB94D0063B5C9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */; };
 		9C8C87A420B12E0300AD8982 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C87A320B12E0300AD8982 /* String+MD5.swift */; };
 		9CD1310E20D51B6F00C21005 /* RFMemoryCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CD1310D20D51B6F00C21005 /* RFMemoryCache.mm */; };
@@ -65,7 +64,6 @@
 		9C8B0AF220ADA42A0063B5C9 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		9C8B0AF420ADABF80063B5C9 /* MambaOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MambaOptions.swift; sourceTree = "<group>"; };
 		9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MambaManager.swift; sourceTree = "<group>"; };
-		9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		9C8C87A320B12E0300AD8982 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		9CD1310720D51AE700C21005 /* RFMamba-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFMamba-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				9C8B0AF220ADA42A0063B5C9 /* Placeholder.swift */,
 				9C8B0AF420ADABF80063B5C9 /* MambaOptions.swift */,
 				9C8B0AF620ADB52C0063B5C9 /* MambaManager.swift */,
-				9C8B0AF820ADB74D0063B5C9 /* ImageDownloader.swift */,
 				9C8B0AFA20ADB94D0063B5C9 /* ImageCache.swift */,
 			);
 			path = Core;
@@ -339,7 +336,6 @@
 				9C8B0AF720ADB52C0063B5C9 /* MambaManager.swift in Sources */,
 				9CD1310E20D51B6F00C21005 /* RFMemoryCache.mm in Sources */,
 				9C8B0AF320ADA42A0063B5C9 /* Placeholder.swift in Sources */,
-				9C8B0AF920ADB74D0063B5C9 /* ImageDownloader.swift in Sources */,
 				9C8C87A420B12E0300AD8982 /* String+MD5.swift in Sources */,
 				9C8B0AF520ADABF80063B5C9 /* MambaOptions.swift in Sources */,
 			);

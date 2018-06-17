@@ -13,6 +13,7 @@ let MambaEmptyOptions = [MambaOption]()
 
 public enum MambaOption{
     
+    case retryFailed
 
     case downloadPriority(Float)
     
@@ -32,11 +33,7 @@ public enum MambaOption{
     
     case scaleFactor(CGFloat)
     
-    case preloadAllAnimationData
-    
     case keepCurrentImageWhileLoading
-    
-    case onlyLoadFirstFrame
     
     case cacheOriginalImage
 }
