@@ -8,6 +8,12 @@
 
 import UIKit
 
+public final class RetrieveImageTask {
+    
+    public static let `default` = RetrieveImageTask()
+    
+}
+
 public class MambaManager {
 
     public static let shared = MambaManager()
@@ -27,6 +33,31 @@ public class MambaManager {
         self.downloader = downloader
         self.cache = cache
     }
+    
+    public func retrieveImage(with resource: Resource,
+                              options: MambaOptions?) -> RetrieveImageTask
+    {
+        let task = RetrieveImageTask()
+        let options = options ?? MambaEmptyOptions
+        if options.forceRefresh {
+            downloadImage(with: resource.downloadURL,
+                          forKey: resource.cacheKey)
+            
+        }
+        
+        
+        return task
+    }
+    
+    func downloadImage(with url: URL,
+                       forKey key: String) {
+        
+        
+        
+    }
+    
+    
+    
     
     
 }
