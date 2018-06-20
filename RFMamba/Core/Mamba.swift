@@ -16,7 +16,6 @@ public final class Mamba<Base> {
     }
 }
 
-
 public protocol MambaCompatible {
     associatedtype CompatibleType
     var rf: CompatibleType { get }

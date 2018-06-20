@@ -40,7 +40,6 @@ public protocol Resource {
     var cacheKey: String { get }
     
     var downloadURL: URL { get }
-
 }
 
 public struct ImageResource: Resource {
@@ -54,7 +53,7 @@ public struct ImageResource: Resource {
      Create a resource.
      
      - parameter downloadURL: The target image URL.
-     - parameter cacheKey:    The cache key. If `nil`, Kingfisher will use the `absoluteString` of `downloadURL` as the key.
+     - parameter cacheKey:    The cache key. If `nil`, RFMamba will use the `absoluteString` of `downloadURL` as the key.
      
      - returns: A resource.
      */
@@ -64,3 +63,14 @@ public struct ImageResource: Resource {
         self.cacheKey = cacheKey ?? url.absoluteString
     }
 }
+
+extension URL: Resource {
+    public var cacheKey: String { return absoluteString }
+    public var downloadURL: URL { return try! self.asURL() }
+}
+
+extension String: Resource {
+    public var cacheKey: String { return self }
+    public var downloadURL: URL { return try! self.asURL() }
+}
+

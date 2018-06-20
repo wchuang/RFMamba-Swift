@@ -32,10 +32,7 @@ open class ImageCache {
     //Memory
     fileprivate let memoryCache = RFMemoryCache.default()
 
-
-    
     public static let `default` = ImageCache(name: "default")
-
 
     public init(name: String){
         
